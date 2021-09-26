@@ -23,12 +23,12 @@ signed main()
             if(st.size() < y)
             {
                 st.insert(a[j]);
-				        j++;
+		 j++;
                 continue;
             }
             st.insert(a[j]);
             int tot = 0; 
-			      int sum = 0;
+            int sum = 0;
             for(auto it:st)
             {
                 if(tot == st.size()-y) break;
@@ -37,13 +37,13 @@ signed main()
             }
             if(sum > x)
             {
-				        st.erase(st.find(a[prev]));
-			  	      st.erase(st.find(a[j]));
-				        prev++;
+		st.erase(st.find(a[prev]));
+		st.erase(st.find(a[j]));
+		prev++;
             }
             else
             {
-				        if((j - prev + 1) > ans) ans = j - prev + 1;
+		if((j - prev + 1) > ans) ans = j - prev + 1;
                 j++;
             } 
         }
