@@ -23,15 +23,15 @@ signed main()
         int ans = 0;
         vector<pair<int,int>> p(3);
       
-		    // a>=n/2 and a<=n-2
+	// a>=n/2 and a<=n-2
         if(n%3==0) p[0] = { n/3 , n-2 };
-		    else p[0] = {n/3 + 1, n-2 };
+	else p[0] = {n/3 + 1, n-2 };
       
-		    // a>(n+k)/2
+	// a>(n+k)/2
         if((n+k)%2 == 0) p[1] = { (n+k)/2 + 1 , n };
         else p[1] = { (n+k)/2 + 1 , n };
       
-		    // a<(n-k)/2
+	// a<(n-k)/2
         if((n-k)%2 == 0) p[2] = { 0 , (n-k)/2 - 1 };
         else p[2] = { 0 , (n-k)/2 };
       
